@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>How to dashboard</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body {
+        font-family: '-apple-system', 'Droid Serif';
+      }
+      h1, h2, h3 {
+        font-family: '-apple-system', 'Yanone Kaffeesatz';
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+      .remark-slide-content h1 { font-size: 3em; }
+      .remark-slide-content h2 { font-size: 2em; }
+      .remark-slide-content h3 { font-size: 1.6em; }
+      .footnote {
+        position: absolute;
+        bottom: 3em;
+      }
+      li, p { line-height: 1.618em; }
+      .red { color: #fa0000; }
+      .gray { color: #cccccc; }
+      .large { font-size: 2em; }
+      a, a > code {
+        color: rgb(249, 38, 114);
+        text-decoration: none;
+      }
+      code {
+        background: #e7e8e2;
+        border-radius: 5px;
+      }
+      .remark-code, .remark-inline-code { 
+        font-family: 'Ubuntu Mono'; 
+        line-height: 1.25em;
+      }
+      .remark-code-line-highlighted {
+         background-color: #373832; 
+      }
+      .pull-left {
+        float: left;
+        width: 47%;
+      }
+      .pull-right {
+        float: right;
+        width: 47%;
+      }
+      .pull-right ~ p {
+        clear: both;
+      }
+      #slideshow .slide .content code {
+        font-size: 0.8em;
+      }
+      #slideshow .slide .content pre code {
+        font-size: 0.9em;
+        padding: 15px;
+      }
+      .inverse {
+        background: #D32D28;
+        color: whitesmoke;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 1.618em;
+      }
+
+      /* Slide-specific styling */
+      #slide-inverse .footnote {
+        bottom: 12px;
+        left: 20px;
+      }
+      #slide-how .slides {
+        font-size: 0.9em;
+        position: absolute;
+        top:  151px;
+        right: 140px;
+      }
+      #slide-how .slides h3 {
+        margin-top: 0.2em;
+      }
+      #slide-how .slides .first, #slide-how .slides .second {
+        padding: 1px 20px;
+        height: 90px;
+        width: 120px;
+        -moz-box-shadow: 0 0 10px #777;
+        -webkit-box-shadow: 0 0 10px #777;
+        box-shadow: 0 0 10px #777;
+      }
+      #slide-how .slides .first {
+        background: #fff;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        z-index: 1;
+      }
+      #slide-how .slides .second {
+        position: relative;
+        background: #fff;
+        z-index: 0;
+      }
+
+      /* Two-column layout */
+      .left-column {
+        color: #777;
+        width: 20%;
+        height: 92%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 75%;
+        float: right;
+        padding-top: 1em;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 450px;
+      }
+
+      .icon > img {
+        width: 43px;
+        height: 43px;
+      }
+
+      pre {
+        white-space: pre-wrap; 
+      }
+
+      @page {
+        size: 908px 681px;
+        margin: 0;
+      }
+
+      @media print {
+        .remark-slide-scaler {
+          width: 100% !important;
+          height: 100% !important;
+          transform: scale(1) !important;
+          top: 0 !important;
+          left: 0 !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+name: inverse
+layout: true
+class: center, middle, inverse
+
+---
+
+# How to dashboard
+## Using Grafana and Docker Compose
+
+---
+
+# Grafana
+
+## The open platform for beautiful analytics and monitoring
+
+---
+
+layout: false
+class: center, middle
+
+
+![Example board](./images/grafana.png)
+
+---
+
+class: center, middle, inverse
+
+# SimpleJSON data source
+
+## ASP.net Core Web API
+
+---
+
+class: center, middle, inverse
+
+# ~~Docker~~ Containere
+
+## A container image is a way to package an app or service and deploy it in a reliable and reproducible way. You could say that ~~Docker~~ is not only a technology, but also a philosophy and a process.
+
+---
+
+layout: false
+class: center, middle
+
+![Containere](./images/containere.png)
+
+---
+
+class: center, middle, inverse
+
+## Docker developers don't say, "It works on my machine, why not in production?" They say, "It runs on Docker". Docker-packaged apps can be executed on any supported Docker environment. Docker packaged apps run consistently on all deployment targets (Dev, QA, staging, production).
+
+---
+
+class: center, middle, inverse
+
+# Docker Compose
+
+## Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services. Then, with a single command, you create and start all the services from your configuration.
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
